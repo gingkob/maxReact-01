@@ -1,0 +1,28 @@
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 16px 1px rgb(195, 146, 105);
+  border: 1px solid firebrick;
+  transition: linear 250ms, ease-in-out .5s;
+  background-color: bisque;
+  padding: 6px 24px;
+  color: firebrick;
+  min-width: 33%;
+  margin: 10px auto 15px;
+}
+
+button:hover{
+  background-color: firebrick;
+  border-color: bisque;
+  color: bisque;
+  box-shadow: inset 0px 0px 8px 4px rgb(195, 146, 105);
+  padding: 4px;
+  /* margin: 0px; */
+  /* width: 160px; */
+  height: 32px;
+  border-radius: 30px;
+  transition: linear 500ms;
+  cursor: pointer;
+  margin: 10px auto 12px;
+}

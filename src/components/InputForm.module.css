@@ -1,0 +1,72 @@
+.form-container {
+  display: block;
+  margin: 0px auto;
+  background-color: firebrick;
+  color: bisque;
+  border: 2px solid whitesmoke;
+  box-shadow: 0px 0px 4px 3px bisque;
+  padding: 20px;
+  max-width: 400px;
+  position: relative;
+  height: 180px;
+}
+
+.users-container {
+  margin: 20px auto;
+  background-color: firebrick;
+  color: bisque;
+  border: 2px solid whitesmoke;
+  /* border-radius: 8px; */
+  box-shadow: 0px 0px 4px 3px bisque;
+  padding: 40px 20px;
+  max-width: 400px;
+}
+
+.users-container>p{
+  margin: 0px 8px;
+  border-top: 1px solid bisque;
+  padding: 8px;
+
+}
+
+/* .users-container>p:first-child {
+  border-top: 16px solid bisque;
+} */
+
+.users-container>p:last-child {
+  border-bottom: 1px solid bisque;
+}
+
+.input-el {
+  padding: 5px 10px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+input {
+  height: 2rem;
+  width: 250px;
+  border: none;
+  padding: 4px 8px;
+  background-color: bisque;
+  color: firebrick;
+}
+
+input:focus {
+  outline: none;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left:0;
+  /* border-top:1px solid bisque; */
+}
