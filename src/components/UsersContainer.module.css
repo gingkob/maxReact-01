@@ -1,0 +1,21 @@
+.users-container {
+  margin: 20px auto;
+  background-color: firebrick;
+  color: bisque;
+  border: 2px solid whitesmoke;
+  /* border-radius: 8px; */
+  box-shadow: 0px 0px 4px 3px bisque;
+  padding: 40px 20px;
+  max-width: 400px;
+}
+
+.users-container>p{
+  margin: 0px 8px;
+  border-top: 1px solid bisque;
+  padding: 8px;
+
+}
+
+.users-container>p:last-child {
+  border-bottom: 1px solid bisque;
+}
