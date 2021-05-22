@@ -1,8 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useRef, useContext } from 'react';
+
+import { ContextUser } from './store/ContextUser';
 import classes from './InputForm.module.css';
 import Button from './UI/Button';
 
-const InputForm = (props) => {
+const InputForm = () => {
+
+  let { setMessage, setShowModal, addUsers } = useContext(ContextUser)
 
   let nameInput = useRef();
   let ageInput = useRef();
@@ -13,11 +17,11 @@ const InputForm = (props) => {
     let age = parseInt(ageInput.current.value.trim());
 
     if (!name || age <= 0) {
-      props.setMessage('Please enter a valid name and age');
-      props.setShowModal(true);
+      setMessage('Please enter a valid name and age');
+      setShowModal(true);
       return;
     }
-    props.setUsers(`${name}: (${age} years old)`);
+    addUsers(`${name}: (${age} years old)`);
     nameInput.current.value = '';
     ageInput.current.value = '';
   }
